@@ -69,32 +69,28 @@ nav .links > a:hover {
     
 }
 
-#showcase img {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-30%, -40%);
-    background-color: rgba(255, 179, 108, 0.61);
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#showcase p {
-    margin-top: 1rem;
+#showcase div {
     position: absolute;
     top: 50%;
-    left: 25.5%;
-    transform: translate(-25.5%, 0);
+    left: 30%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+}
+
+#showcase div img {
+    background-color: rgba(255, 179, 108, 0.61);
+    padding: 1rem;
+}
+
+#showcase div p {
     background-color: rgba(255, 179, 108, 0.61);
     color: #f3f3f3;
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 1;
     letter-spacing: 0.4rem;
+    margin-top: 1rem;
     padding: 1rem;
-    text-align: center;
 }
 
 #products {
