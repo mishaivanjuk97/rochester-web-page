@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.border {
+    border-right: #b6b6b6 2px solid;
+    height: 450px;
+    margin-right: 50%;
+}
+
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #333;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    opacity: 0.9;
+    transition: ease-in-out;
+}
+
+nav img {
+    width: 13rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links {
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+}
+
+nav .links .left-link {
+    padding-right: 1.5rem;
+    border-right: #f3f3f3 1px solid;
+    margin-right: 1.5rem;
+}
+
+nav .links > a:hover {
+    color: rgb(168, 157, 157);
+}
+
+#showcase { 
+    background: url(../img/AdobeStock_195498577_Preview.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#showcase img {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%, -40%);
+    background-color: rgba(255, 179, 108, 0.61);
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase p {
+    margin-top: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 25.5%;
+    transform: translate(-25.5%, 0);
+    background-color: rgba(255, 179, 108, 0.61);
+    color: #f3f3f3;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 0.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#products {
+    background-color: #e7e7e7;
+    color: #505050;
+}
+
+#products .product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:  2em 10em;
+    margin: 1%;
+    box-shadow: black 1px 1px 15px;
+}
+
+.product-image img {
+    height: 550px;
+}
+
+@media(max-width:700px) {
+    .border {
+        display: none;
+    }
+
+    #products .product {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 4% 1%;
+    }
+
+    
+}
