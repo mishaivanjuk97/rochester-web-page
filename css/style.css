@@ -117,13 +117,28 @@ nav .links > a:hover {
     width: 100%;
     background-color: #b6b6b6;
     color: #333;
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 2rem; 
+    overflow: auto;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+#footer i {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#footer a {
+    color: #333;
+}
+
+#footer a:hover {
+    color: #f3f3f3;
 }
 
 @media(max-width:700px) {
