@@ -13,7 +13,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
     line-height: 1.35;
-    transition : 0.3s ease-out;
 }
 
 a {
@@ -51,13 +50,17 @@ nav .links {
     position: absolute;
     right: 1rem;
     top: 0.7rem;
-    transition : 0.3s ease-out;
 }
 
 nav .links .left-link {
     padding-right: 1.5rem;
     border-right: #f3f3f3 1px solid;
     margin-right: 1.5rem;
+    transition : 0.3s ease-out;
+}
+
+nav .links .right-link {
+    transition : 0.3s ease-out;
 }
 
 nav .links > a:hover {
@@ -119,7 +122,6 @@ nav .links > a:hover {
 }
 
 #footer {
-    width: 100%;
     background-color: #d3d3d3;
     color: #333;
     font-size: 1.7rem;
@@ -130,7 +132,7 @@ nav .links > a:hover {
     justify-content: center;
     overflow: auto;
     margin: auto;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 #footer i {
@@ -140,13 +142,15 @@ nav .links > a:hover {
 
 #footer a {
     color: #333;
+    background-color: rgb(184, 182, 182);
+    padding: 0.5rem 1rem;
+    margin: auto;
+    transition : 0.3s ease-out;
 }
 
 #footer a:hover {
-    color: #5a5959;
-}
-
-#footer .shop p {
+    background-color: #5a5959;
+    color: #b6b6b6;
 }
 
 @media(max-width:768px) {
