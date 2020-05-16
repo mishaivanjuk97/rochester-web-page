@@ -122,7 +122,7 @@ nav .links > a:hover {
 }
 
 #footer {
-    background-color: #d3d3d3;
+    background-color: #c3c3c3;
     color: #333;
     font-size: 1.7rem;
     display: grid;
@@ -142,10 +142,10 @@ nav .links > a:hover {
 
 #footer a {
     color: #333;
-    background-color: rgb(184, 182, 182);
     padding: 0.5rem 1rem;
     margin: auto;
     transition : 0.3s ease-out;
+    border: 1px solid #5a5959;
 }
 
 #footer a:hover {
