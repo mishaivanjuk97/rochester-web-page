@@ -169,6 +169,10 @@ nav .links > a:hover {
     #products .product img {
         margin: 1rem;
     }
+
+    #showcase {
+        background-position: 70%;
+    }
     
     #showcase div {
         position: relative;
