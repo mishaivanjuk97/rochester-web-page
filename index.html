@@ -39,6 +39,7 @@
                 <p><strong>Енергетична цінність на 100мл:</strong> 76ккал / 323кДж; білки 1,0г; вуглеводи 18,9г; цукор  18,1г; жири 0,1г; насичені жирні кислоти 0,1г; сіль 0,009г.</p>
             </div>
         </div>
+        <div class="border-bot"></div>
         <div class="product">
             <div class="product-text">
                 <p><strong>Rochester Dark Ginger</strong> - напій створений за старим ямайським рецептом, який передається поколіннями.</p>
@@ -56,6 +57,7 @@
                 <img src="img/dark_ginger.png" alt="">
             </div>
         </div>
+        <div class="border-bot"></div>
         <div class="product">
             <div class="product-image">
                 <img src="img/light_ginger.png" alt="">
@@ -73,6 +75,7 @@
                 <p><strong>Енергетична цінність на 100мл:</strong> 39ккал / 165кДж; білки 0,2г; вуглеводи 8,3г; цукор (яблучний концентрат) 6,7г; жири 0,2г; насичені жирні кислоти 0,1г; сіль 0,057г.</p>
             </div>
         </div>
+        <div class="border-bot"></div>
         <div class="product">
             <div class="product-text">
                 <p><strong>Rochester Root Ginger</strong> - це священний Грааль серед імбирних напоїв, який містить мелений корінь імбиру.</p>
@@ -92,6 +95,7 @@
                 <img src="img/root_ginger.png" alt="">
             </div>
         </div>
+        <div class="border-bot"></div>
         <div class="product">
             <div class="product-image">
                 <img src="img/berry_punch.png" alt="">
@@ -109,6 +113,7 @@
                 <p><strong>Енергетична цінність на 100мл:</strong> 73ккал / 310кДж; білки 1,0г; вуглеводи 18,3г; цукор  0,1г; жири 0,1г; насичені жирні кислоти 0,1г; сіль 0,011г.</p>
             </div>
         </div>
+        <div class="border-bot"></div>
         <div class="product">
             <div class="product-text">
                 <p><strong>Rochester Rum & Raisin</strong> - напій зроблений на основі рому та родзинок. Підходить для тих, хто любить смак та аромат рому.</p>
@@ -135,12 +140,25 @@
         <div class="shop">
             <i class="fas fa-shopping-cart"></i>
             <br>
-            <a href="https://www.google.com.ua" target="_blank">Замовити</a>
+            <a href="#" target="_blank">Замовити</a>
         </div>
         <div class="phone-number">
             <i class="fas fa-phone"></i>
             <p>(050)-988-81-90</p>
         </div>
     </footer>
+    <script type="text/javascript">
+    var lastScrollTop = 0;
+    var navbar = document.querySelector('#navbar');
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top="-100px";
+        } else {
+            navbar.style.top="0";
+        }
+        lastScrollTop = scrollTop;
+    })
+    </script>
 </body>
 </html>

@@ -26,6 +26,12 @@ a {
     margin-right: 50%;
 }
 
+.border-bot {
+    border-bottom: 2px solid #b6b6b6;
+    max-width: 85%;
+    margin: auto;
+}
+
 nav {
     z-index: 2;
     display: grid;
@@ -37,6 +43,7 @@ nav {
     width: 100%;
     position: fixed;
     opacity: 0.9;
+    transition: 0.5s;
 }
 
 nav img {
@@ -86,12 +93,10 @@ nav .links > a:hover {
 }
 
 #showcase div img {
-    background-color: rgba(128, 96, 50, 0.418);
     padding: 1rem;
 }
 
 #showcase div p {
-    background-color: rgba(128, 96, 50, 0.418);
     color: #f3f3f3;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -113,8 +118,7 @@ nav .links > a:hover {
     justify-content: center;
     text-align: center;
     padding:  2em 10em;
-    margin: 1%;
-    box-shadow: black 1px 1px 15px;
+    margin: 1% auto;
 }
 
 .product-image img {
@@ -146,6 +150,8 @@ nav .links > a:hover {
     margin: auto;
     transition : 0.3s ease-out;
     border: 1px solid #5a5959;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
 #footer a:hover {
