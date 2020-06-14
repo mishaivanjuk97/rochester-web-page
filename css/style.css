@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body, form.label {
+body {
     background-color: #e7e7e7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
@@ -156,6 +156,9 @@ nav .links > a:hover {
 #footer a:hover {
     background-color: #5a5959;
     color: #b6b6b6;
+}
+
+form {
 }
 
 @media(max-width:768px) {
