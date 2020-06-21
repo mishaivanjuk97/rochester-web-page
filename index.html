@@ -15,7 +15,7 @@
         <img src="img/Logo-White.png" alt="">
         <div class="links">
             <a href="#products" class="left-link">Продукція</a>
-            <a href="#footer" class="right-link">Контакти</a>
+            <a href="#contacts" class="right-link">Контакти</a>
         </div>
     </nav>
     <section id="showcase">   
@@ -135,7 +135,7 @@
             </div>
         </div>
     </section>
-    <footer id="footer">
+    <section id="contacts">
         <div class="email">
             <i class="fas fa-envelope"></i>
             <p>rochester.ukraine@gmail.com</p>
@@ -149,19 +149,19 @@
             <i class="fas fa-phone"></i>
             <p>(050)-988-81-90</p>
         </div>
-    </footer>
+    </section>
     <script type="text/javascript">
-    var lastScrollTop = 0;
-    var navbar = document.querySelector('#navbar');
-    window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-            navbar.style.top="-100px";
-        } else {
-            navbar.style.top="0";
-        }
-        lastScrollTop = scrollTop;
-    })
+        var lastScrollTop = 0;
+        var navbar = document.querySelector('#navbar');
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop){
+                navbar.style.top="-100px";
+            } else {
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        })
     </script>
 </body>
 </html>

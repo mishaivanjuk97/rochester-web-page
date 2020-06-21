@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rochester</title>
+    <title>Rochester | Повідомлення</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png">
 </head>
@@ -12,7 +12,7 @@
         <img src="img/Logo-White.png" alt="">
         <div class="links">
             <a href="index.html" class="left-link">Продукція</a>
-            <a href="#footer" class="right-link">Контакти</a>
+            <a href="index.html" class="right-link">Контакти</a>
         </div>
     </nav>
     <div class="container">
@@ -29,6 +29,19 @@
             <input type="submit" value="Відправити" class="btn"/>
         </form>
     </div>
-
+    
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        var navbar = document.querySelector('#navbar');
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop){
+                navbar.style.top="-100px";
+            } else {
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>   
 </body>
 </html>
