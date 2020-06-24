@@ -17,13 +17,15 @@
     </nav>
     <div class="container">
         <h2>Залиште нам повідомлення</h2>
-        <form>
+        <form action="POST" data-netligy="true">
             <label for="name">Ім'я</label>
             <input required type="text" placeholder="Введіть ім'я..." name="name" id="name"/>
             <label for="email">Електронна адреса (e-mail)</label>
             <input required type="email" placeholder="Введіть e-mail..." name="email" id="email"/>
+            <label for="tel">Мобільний телефон</label>
+            <input required type="tel" placeholder="Введіть моб.телефон..." name="tel" id="tel"/>
             <label for="town">Місто</label>
-            <input required type="text" placeholder="Введіть місто..." id="town"/>
+            <input required type="text" placeholder="Введіть місто..." name="town" id="town"/>
             <label for="message">Повідомлення</label>
             <textarea required name="message" id="message" placeholder="Напишіть повідомлення..." rows="15"></textarea>
             <input type="submit" value="Відправити" class="btn"/>
