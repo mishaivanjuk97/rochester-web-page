@@ -41,6 +41,7 @@ nav {
     position: fixed;
     opacity: 0.9;
     transition: 0.5s;
+    height: 48px;
 }
 
 nav img {
@@ -72,7 +73,7 @@ nav .links > a:hover {
 
 #showcase { 
     
-    background: url(../img/ginger-ground-and-raw-root1.jpg);
+    background: url(../img/ginger-ground-and-raw-root111.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -277,6 +278,7 @@ form textarea {
         font-size: 0.8rem;
         padding: 0.5rem;
         text-align: center;
+        height: 55px;
     }
 
     #showcase {
