@@ -156,25 +156,33 @@
         <div class="shop">
             <i class="fas fa-shopping-cart"></i>
             <br>
-            <a href="form.html" target="_blank">Замовити</a>
+            <button id="showModal">Замовити</button>
         </div>
         <div class="phone-number">
             <i class="fas fa-phone"></i>
             <p>(096)-188-14-92</p>
         </div>
     </section>
-    <script type="text/javascript">
-        var lastScrollTop = 0;
-        var navbar = document.querySelector('#navbar');
-        window.addEventListener("scroll", function(){
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop){
-                navbar.style.top="-100px";
-            } else {
-                navbar.style.top="0";
-            }
-            lastScrollTop = scrollTop;
-        })
-    </script>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Залиште нам повідомлення</h2>    
+            <form name="contact" method="POST" data-netlify="true">
+                <label for="name">Ім'я</label>
+                <input required type="text" placeholder="Введіть ім'я..." name="name" id="name"/>
+                <label for="email">Електронна адреса (e-mail)</label>
+                <input required type="email" placeholder="Введіть e-mail..." name="email" id="email"/>
+                <label for="tel">Мобільний телефон</label>
+                <input required type="tel" placeholder="Введіть моб.телефон..." name="tel" id="tel"/>
+                <label for="town">Місто</label>
+                <input required type="text" placeholder="Введіть місто..." name="town" id="town"/>
+                <label for="message">Повідомлення</label>
+                <textarea required name="message" id="message" placeholder="Напишіть повідомлення..." rows="15"></textarea>
+                <button class="btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
 </body>
 </html>
