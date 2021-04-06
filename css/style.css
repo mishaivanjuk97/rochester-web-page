@@ -116,17 +116,7 @@ nav .links > a:hover {
     text-align: center;
     padding:  2em 10em;
     margin: 1% auto;
-    /* transform: translateX(400%);
-    transition: transform 0.4s ease; */
 }
-
-/* .product:nth-of-type(even) {
-    transform: translateX(-400%);
-}
-
-.product.show {
-    transform: translateX(0);
-} */
 
 .product-image img {
     height: 550px;
@@ -182,6 +172,7 @@ nav .links > a:hover {
     right: 0;
     bottom: 0;
     animation: modalOpen 0.5s;
+    overflow: auto;
 }
 
 .modal {
@@ -253,7 +244,13 @@ form .btn {
     to {
        opacity: 1;
     }
- }
+}
+
+@media(max-width:1024px) {
+    .modal {
+        width: 60%;
+    }
+}
 
 @media(max-width:768px) {
     .border {
@@ -291,14 +288,9 @@ form .btn {
     }
     
     .modal {
-        width: 90%;
+        width: 70%;
         font-size: 1.3rem;
         margin-top: 4rem;
-
-    }
-
-    .btn {
-        margin-bottom: 2rem;
     }
 }
 
@@ -355,11 +347,12 @@ form .btn {
     
     .modal {
         width: 90%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 4rem;
     }
 
-    .btn {
-        margin-bottom: 2rem;
+    .modal h2 {
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 }

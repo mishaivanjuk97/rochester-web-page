@@ -12,6 +12,8 @@ modal.addEventListener('click', (e) => {
    }
 })
 
+
+
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function(){
