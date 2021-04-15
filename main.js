@@ -27,7 +27,7 @@ window.addEventListener("scroll", function(){
 
 const openBtn = document.querySelector('#bars');
 const menuLinks = document.querySelector('.menu-links');
-// const links = document.querySelectorAll('.')
+const links = document.querySelectorAll('#link')
 
 openBtn.addEventListener('click', () => {
    if(openBtn.className === 'fas fa-bars') {
@@ -39,3 +39,7 @@ openBtn.addEventListener('click', () => {
    menuLinks.classList.toggle('show');
 });
 
+links.forEach(link => link.addEventListener('click', () => {
+   menuLinks.classList.remove('show');
+   openBtn.className = 'fas fa-bars';
+}))
