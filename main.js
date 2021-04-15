@@ -1,4 +1,3 @@
-const navbar = document.querySelector('#navbar');
 const modal = document.querySelector('.modal-container');
 const btn = document.querySelector('#showModal');
 
@@ -13,9 +12,8 @@ modal.addEventListener('click', (e) => {
 })
 
 
-
+const navbar = document.querySelector('#navbar');
 let lastScrollTop = 0;
-
 window.addEventListener("scroll", function(){
    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop){
@@ -25,3 +23,19 @@ window.addEventListener("scroll", function(){
       }
    lastScrollTop = scrollTop;
 })
+
+
+const openBtn = document.querySelector('#bars');
+const menuLinks = document.querySelector('.menu-links');
+// const links = document.querySelectorAll('.')
+
+openBtn.addEventListener('click', () => {
+   if(openBtn.className === 'fas fa-bars') {
+      openBtn.className = 'fas fa-times'
+   } else {
+      openBtn.className = 'fas fa-bars'
+   }
+   
+   menuLinks.classList.toggle('show');
+});
+

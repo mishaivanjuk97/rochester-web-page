@@ -15,7 +15,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 1.35;
-    overflow-x: hidden;
 }
 
 a {
@@ -37,14 +36,14 @@ a {
 
 nav {
     z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: #333;
     width: 100%;
     position: fixed;
     opacity: 0.9;
     transition: 0.5s;
-    height: 48px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav img {
@@ -53,24 +52,50 @@ nav img {
 }
 
 nav .links {
-    position: absolute;
-    right: 1rem;
-    top: 0.7rem;
+    padding: 0.5rem 1rem;
+    
 }
 
 nav .links .left-link {
     padding-right: 1.5rem;
     border-right: #f3f3f3 1px solid;
     margin-right: 1.5rem;
-    transition : 0.3s ease-out;
-}
-
-nav .links .right-link {
-    transition : 0.3s ease-out;
 }
 
 nav .links > a:hover {
     color: rgb(168, 157, 157);
+    transition : 0.3s ease-out;
+
+}
+
+nav .menu {
+    color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-links {
+    background-color: #333;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    width: 75%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(400%);
+    transition : 0.3s ease;
+}
+
+nav .menu-links.show {
+    transform: translateX(0);
 }
 
 #showcase {  
@@ -79,6 +104,7 @@ nav .links > a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 #showcase div {
@@ -296,21 +322,28 @@ form .btn {
 
 @media(max-width:468px) {
     nav img {
-        width: 100px;
+        width: 145px;
         padding: 0;
-    }
-
-    nav .links {
-        position: static;
     }
     
     nav {
-        display: block;
-        box-sizing: border-box;
-        font-size: 0.8rem;
-        padding: 0.5rem;
-        text-align: center;
-        height: 55px;
+        font-size: 2rem;
+        padding: 0.3rem 1rem;
+        height: 50px;
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav .menu-links {
+        display: flex;
+    }
+
+    nav .links {
+        display: none;
+        padding: 0;
+        margin: 0;
     }
 
     #showcase {
